@@ -1,0 +1,124 @@
+.my-bg {
+  background-image: url(../images/pexels-stywo.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.container {
+  width: 60%;
+}
+
+.big-font {
+  font-size: 70px;
+  font-weight: 700;
+}
+
+.searchbar {
+  margin-bottom: auto;
+  margin-top: auto;
+  height: 60px;
+  background-color: #353b48;
+  border-radius: 30px;
+  padding: 10px;
+}
+
+.search_input {
+  padding: 0 10px;
+  width: 85%;
+  color: white;
+  border: 0;
+  outline: 0;
+  background: none;
+  caret-color: white;
+  line-height: 40px;
+}
+
+.search_icon {
+  height: 40px;
+  width: 40px;
+  float: right;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  color: #353b48;
+  text-decoration: none;
+  background: white;
+}
+
+.my-box {
+  background: rgba(255, 255, 255, 0.09);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(3.7px);
+  -webkit-backdrop-filter: blur(3.7px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+
+  animation: fade-up 0.5s 0.4s;
+}
+
+.my-img {
+  animation: fade-down 0.5s 0.4s;
+}
+
+.searchbar {
+  animation: fade-down 0.5s 0.4s;
+}
+
+@keyframes fade-up {
+  0% {
+    opacity: 0;
+    transform: translateY(30px) scale(0.9);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0px) scale(1);
+  }
+}
+
+@keyframes fade-down {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px) scale(0.9);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0px) scale(1);
+  }
+}
+
+@media (max-width: 639.98px) {
+  .container {
+    width: 90%;
+  }
+  .my-bg {
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .my-box {
+    margin-top: 0px;
+  }
+  .searchbar {
+    width: 100%;
+    height: 60px;
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+
+  .search_input {
+    width: 30%;
+  }
+  .big-font {
+    font-size: 40px;
+    font-weight: 500;
+  }
+
+  .my-icon {
+    width: 150%;
+    transform: translatex(-20%);
+  }
+}
